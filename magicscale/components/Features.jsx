@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Features = () => {
@@ -6,8 +6,10 @@ const Features = () => {
     <div className="w-full flex flex-col items-center justify-center">
       <h3 className="md:text-5xl text-2xl px-[10px] md:max-w-[1120px] text-center font-extrabold">
         Discover the
-        <span className="text-primary"> 3 Essential Steps to Take</span> Your
-        Restaurant Business Online
+        <span className="text-primary">
+          {" "}
+          3 Essential Steps to Take
+        </span> Your Restaurant Business Online
       </h3>
 
       <img className="w-[300px] py-7 md:py-10" src="/grow.png" />
@@ -35,8 +37,8 @@ const Features = () => {
           <h4 className="flex justify-center py-5">
             <FaCheckCircle className="text-primary text-[30px] md:text-[36px] mr-5" />
             <p className="font-bold">
-              Once approved, you’ll get your FSSAI via email, with
-              physical copies available upon request.
+              Once approved, you’ll get your FSSAI via email, with physical
+              copies available upon request.
             </p>
           </h4>
         </div>
@@ -101,6 +103,6 @@ const Features = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Features
+export default Features;

@@ -8,9 +8,10 @@ const Footer = () => {
         <span className="hover:text-primary">
           <Link href={"/contact-us"}>Contact Us </Link>
         </span>
-        | 
+        |
         <Link href={"/terms-of-service"} className="hover:text-primary">
-          {" "} Term of Service {""}
+          {" "}
+          Term of Service {""}
         </Link>
         |
         <Link href={"/privacy-policy"} className="hover:text-primary">
@@ -22,7 +23,7 @@ const Footer = () => {
         </Link>
         |
         <Link href={"/cancellation-and-refund"} className="hover:text-primary">
-         {""} Cancellation and Refund {""}
+          {""} Cancellation and Refund {""}
         </Link>
       </p>
 

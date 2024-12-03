@@ -204,7 +204,7 @@ export default function Example() {
                       onChange={setAgreed}
                       className={classNames(
                         agreed ? "bg-primary" : "bg-gray-200",
-                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary",
                       )}
                     >
                       <span className="sr-only">Agree to policies</span>
@@ -212,7 +212,7 @@ export default function Example() {
                         aria-hidden="true"
                         className={classNames(
                           agreed ? "translate-x-5" : "translate-x-0",
-                          "inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200"
+                          "inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200",
                         )}
                       />
                     </Switch>
@@ -246,7 +246,7 @@ export default function Example() {
                     "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white",
                     agreed
                       ? "bg-primary hover:bg-green-600"
-                      : "bg-gray-300 cursor-not-allowed"
+                      : "bg-gray-300 cursor-not-allowed",
                   )}
                 >
                   Let's talk
