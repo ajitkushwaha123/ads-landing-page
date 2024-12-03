@@ -3,7 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <div className="w-full flex flex-col py-6 items-center justify-center">
+    <div className="w-full bg-backy bg-cover bg-repeat-none flex flex-col py-6 items-center justify-center">
       <h3 className="md:text-5xl text-2xl px-[10px] md:max-w-[1120px] text-center font-extrabold">
         Discover the
         <span className="text-primary"> 3 Essential Steps to Take</span> Your
