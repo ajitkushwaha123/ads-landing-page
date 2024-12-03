@@ -31,7 +31,7 @@ const Hero = () => {
       {/* Main */}
       <div className="w-full px-[10px] bg-backy bg-cover bg-no-repeat justify-center flex items-center">
         <div className="md:max-w-[1120px] w-full py-[25px] md:py-[50px]">
-          <h2 className="md:text-7xl text-[#3f3f3f] text-xl text-center font-extrabold">
+          <h2 className="md:text-7xl text-[#3f3f3f] text-2xl text-center font-extrabold">
             <span className="text-primary">Unlock Your Restaurant’s </span>
             Potential with MagicScale - Swiggy, Zomato Onboarding & FSSAI {""}
             <span className="underline">Licensing !</span>
