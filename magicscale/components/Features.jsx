@@ -6,10 +6,8 @@ const Features = () => {
     <div className="w-full flex flex-col items-center justify-center">
       <h3 className="md:text-5xl text-2xl px-[10px] md:max-w-[1120px] text-center font-extrabold">
         Discover the
-        <span className="text-primary">
-          {" "}
-          3 Essential Steps to Take
-        </span> Your Restaurant Business Online
+        <span className="text-primary"> 3 Essential Steps to Take</span> Your
+        Restaurant Business Online
       </h3>
 
       <img className="w-[300px] py-7 md:py-10" src="/grow.png" />
@@ -20,25 +18,25 @@ const Features = () => {
             First - (Get Your FSSAI License)
           </h3>
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[30px] mr-5" />
-            <p className="font-bold text-[18px]">
-              Our team ensures all necessary documents are accurate .
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">1.</span> Our team
+              ensures all necessary documents are accurate .
             </p>
           </h4>
 
           <h4 className="flex justify-center py-2">
-            <FaCheckCircle className="text-primary text-[30px] md:text-[36px] mr-5" />
-            <p className="font-bold">
-              We handle the application process and keep you updated until your
-              license is approved.
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">2.</span> We handle
+              the application process and keep you updated until your license is
+              approved.
             </p>
           </h4>
 
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[30px] md:text-[36px] mr-5" />
-            <p className="font-bold">
-              Once approved, you’ll get your FSSAI via email, with physical
-              copies available upon request.
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">3.</span> Once
+              approved, you’ll get your FSSAI via email, with physical copies
+              available upon request.
             </p>
           </h4>
         </div>
@@ -48,26 +46,25 @@ const Features = () => {
             Second - (Get Registered on Zomato)
           </h3>
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[30px] mr-5" />
-            <p className="font-bold text-[18px]">
-              Provide basic restaurant details, and we’ll initiate your Zomato
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">1.</span> Provide
+              basic restaurant details, and we’ll initiate your Zomato
               registration process swiftly.
             </p>
           </h4>
 
           <h4 className="flex justify-center py-2">
-            <FaCheckCircle className="text-primary text-[30px] mr-5" />
-            <p className="font-bold">
-              We help you upload your menu and set up an attractive profile to
-              stand out.
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">2.</span> We help you
+              upload your menu and set up an attractive profile to stand out.
             </p>
           </h4>
 
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[36px] mr-5" />
-            <p className="font-bold">
-              After verification, your restaurant goes live, ready to receive
-              orders seamlessly
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">3.</span> After
+              verification, your restaurant goes live, ready to receive orders
+              seamlessly
             </p>
           </h4>
         </div>
@@ -77,26 +74,26 @@ const Features = () => {
             Third - (Register Your Restaurant on Swiggy)
           </h3>
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[36px] mr-5" />
-            <p className="font-bold text-[18px]">
-              Share your restaurant details, and we’ll handle the Swiggy
-              registration process.
+            <p className="font-bold text-[15px] text-[#363636]">
+              <span className="font-extrabold text-black">1.</span> Share your
+              restaurant details, and we’ll handle the Swiggy registration
+              process.
             </p>
           </h4>
 
           <h4 className="flex justify-center py-2">
-            <FaCheckCircle className="text-primary text-[36px] mr-5" />
-            <p className="font-bold">
-              We will be uploading your menu and optimizing pricing to attract
-              more customers.
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">2.</span> We will be
+              uploading your menu and optimizing pricing to attract more
+              customers.
             </p>
           </h4>
 
           <h4 className="flex justify-center py-5">
-            <FaCheckCircle className="text-primary text-[36px] mr-5" />
-            <p className="font-bold">
-              Once approved, your restaurant profile goes live, ready for orders
-              and delivery.
+            <p className="font-bold text-[#363636] text-[15px]">
+              <span className="font-extrabold text-black">3.</span> Once
+              approved, your restaurant profile goes live, ready for orders and
+              delivery.
             </p>
           </h4>
         </div>
