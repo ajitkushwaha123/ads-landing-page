@@ -10,53 +10,70 @@ const Faqs = () => {
   };
 
   return (
-    <section
-      id="faqs"
-      className="py-10 bg-secondary sm:py-12 lg:py-20"
-    >
+    <section id="faqs" className="py-10 bg-secondary sm:py-12 lg:py-20">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <Title preTitle={"Frequently"} title={"Asked Question"} />
         <div className="max-w-5xl mx-auto mt-8 space-y-4 md:mt-16">
           {[
             {
               id: "question1",
-              question:
-                "What is the pricing plan for your restaurant billing software?",
+              question: "What is MagicScale, and what services do you offer?",
               answer:
-                "Our pricing plan is designed to fit your business needs, with flexible options to suit your budget. for more info simply check our picing plans or contact support !.",
+                "MagicScale is a restaurant consultancy company specializing in onboarding restaurants to platforms like Swiggy and Zomato. We also assist with obtaining FSSAI licenses and providing tailored solutions for restaurant owners.",
             },
             {
               id: "question2",
-              question: "How do I choose the right plan for my restaurant?",
+              question:
+                "How does the onboarding process work for Swiggy and Zomato?",
               answer:
-                "Contact our support to discuss your specific needs, and we'll help you select the perfect plan.",
+                "We handle the entire process, including account setup, menu uploads, pricing configuration, and profile optimization, ensuring your restaurant goes live quickly and seamlessly.",
             },
             {
               id: "question3",
-              question: "Can I upgrade or downgrade my plan later?",
+              question: "What is an FSSAI license, and why is it important?",
               answer:
-                "Yes, you can adjust your plan as your business grows or changes.",
+                "An FSSAI license is mandatory for any food business in India. It ensures compliance with food safety standards, builds customer trust, and avoids legal complications. MagicScale simplifies the application process for you.",
             },
 
             {
               id: "questione4",
-              question: "What payment methods do you accept?",
+              question:
+                "How long does it take to get onboarded to Swiggy or Zomato?",
               answer:
-                "We accept credit cards, bank transfers, and other online payment methods.",
+                "The onboarding timeline typically ranges from 1-3 working days, depending on the completeness of your documents and the responsiveness of the platform.",
             },
             {
               id: "question5",
-              question: "Is there a setup fee or contract?",
+              question:
+                "What documents are required for onboarding to Swiggy and Zomato?",
               answer:
-                "No, we don't charge setup fees or require long-term contracts.",
+                "You’ll need your FSSAI license, GST details, a valid ID proof, bank account information, and restaurant details such as the menu and photos.",
             },
             {
               id: "question6",
-              question: "Can I cancel my subscription at any time?",
+              question: "Can you help if I don’t have an FSSAI license yet?",
               answer:
-                "We Provide 7 Days free trial of our software but beyond that we have strictly non-refundable policy.",
+                "Absolutely! We’ll guide you through the FSSAI license application process and ensure you’re compliant before starting your online journey.",
             },
-            // Add more questions as needed
+            {
+              id: "question7",
+              question: "Do I need to manage technical aspects of onboarding?",
+              answer:
+                "Not at all! Our team takes care of all technical and operational tasks, making the process hassle-free for you.",
+            },
+            {
+              id: "question8",
+              question:
+                "Can you help with menu optimization for online platforms?",
+              answer:
+                "Yes, we can assist with menu structuring and pricing to ensure it appeals to your target audience and aligns with platform best practices.",
+            },
+            {
+              id: "question9",
+              question: "How do I get started with MagicScale?",
+              answer:
+                "Simply reach out to us via our website or contact number, and our team will guide you through the onboarding process.",
+            },
           ].map((faq) => (
             <div
               key={faq.id}

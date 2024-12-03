@@ -2,7 +2,7 @@ import React from "react";
 
 const Video = ({width}) => {
   return (
-    <div className={`w-[810px] flex justify-center items-center`}>
+    <div className={`w-[${width}] flex justify-center items-center`}>
       <div className="border-4 rounded-lg border-primary">
         <iframe
         className="rounded-md"

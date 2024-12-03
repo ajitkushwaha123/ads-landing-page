@@ -1,29 +1,42 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Video from "./Video";
 
 const Hero = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="">
-      {/* Header */}
-      <div className="bg-primary text-white p-0.5 sm:text-[20px] md:text-[2rem] text-center w-full">
+      <div className="bg-primary text-white p-0.5 sm:text-[17px] md:text-[1.8rem] text-center w-full">
         <p className="font-bold">
-          INDIA’S MOST COMPREHENSIVE E-COMMERCE WORKSHOP
+          RESTAURANT CONSULTANCY - SWIGGY, ZOMATO ONBOARDING & FSSAI LICENSING
         </p>
       </div>
 
       {/* Main */}
-      <div className="w-full bg-backy bg-cover bg-no-repeat justify-center flex items-center">
+      <div className="w-full px-[10px] bg-backy bg-cover bg-no-repeat justify-center flex items-center">
         <div className="md:max-w-[1120px] w-full py-[50px]">
-          <h2 className="md:text-[78px] text-[28px] leading-none text-center font-extrabold">
-            <span className="text-primary">Learn the Strategies</span> Behind My
-            Successful Indian E-Commerce Stores In My
-            <br />
-            <span className="underline">Live Workshop</span>
+          <h2 className="md:text-7xl text-[#3f3f3f] text-3xl text-center font-extrabold">
+            <span className="text-primary">Unlock Your Restaurant’s </span>
+            Potential with MagicScale - Swiggy, Zomato Onboarding & FSSAI {""}
+            <span className="underline">Licensing !</span>
           </h2>
 
-          <p className="text-[14px] md:text-[28px] text-center py-[20px] font-extrabold">
-            (No Prior Knowledge or Technical Experience Required)
+          <p className="text-[14px] md:text-[28px] text-center py-[20px] text-[#404040] font-black">
+            ( No Expertise Needed – We Handle Everything for You! )
           </p>
 
           <div className="justify-center flex w-full my-[10px] items-center">
@@ -42,18 +55,10 @@ const Hero = () => {
 
           <div className="flex w-full justify-center md:pt-10 pt-5 items-center">
             <div className="px-[20px] hidden md:block">
-              <Video width={"810"} />
+              <Video width={810} />
             </div>
             <div className="px-[20px] md:hidden">
-              {typeof window !== "undefined" && window.innerWidth > 768 ? (
-                <Video width={810} />
-              ) : (
-                <Video
-                  width={
-                    typeof window !== "undefined" ? window.innerWidth - 40 : 320
-                  }
-                />
-              )}
+              <Video width={windowWidth - 40} />
             </div>
           </div>
         </div>
