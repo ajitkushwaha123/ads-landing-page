@@ -26,7 +26,7 @@ export default function Example() {
           >
             <defs>
               <pattern
-                id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                id="unique-pattern-1"
                 x={0}
                 y={0}
                 width={20}
@@ -43,11 +43,7 @@ export default function Example() {
                 />
               </pattern>
             </defs>
-            <rect
-              width={404}
-              height={404}
-              fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
-            />
+            <rect width={404} height={404} fill="url(#unique-pattern-1)" />
           </svg>
           <svg
             className="absolute right-full bottom-0 transform -translate-x-1/2"
@@ -58,7 +54,7 @@ export default function Example() {
           >
             <defs>
               <pattern
-                id="85737c0e-0916-41d7-917f-596dc7edfa27"
+                id="unique-pattern-2"
                 x={0}
                 y={0}
                 width={20}
@@ -75,11 +71,7 @@ export default function Example() {
                 />
               </pattern>
             </defs>
-            <rect
-              width={404}
-              height={404}
-              fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)"
-            />
+            <rect width={404} height={404} fill="url(#unique-pattern-2)" />
           </svg>
           <div>
             <form
@@ -100,7 +92,7 @@ export default function Example() {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
-                    className="py-3 px-4 block w-full border-1 outline-none border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
+                    className="py-3 px-4 block w-full border border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
                   />
                 </div>
               </div>
@@ -117,7 +109,7 @@ export default function Example() {
                     name="last-name"
                     id="last-name"
                     autoComplete="family-name"
-                    className="py-3 outline-none border-gray-100 shadow-sm px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full border border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
                   />
                 </div>
               </div>
@@ -134,7 +126,7 @@ export default function Example() {
                     name="company"
                     id="company"
                     autoComplete="organization"
-                    className="py-3 outline-none border-gray-100 shadow-sm px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full border border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
                   />
                 </div>
               </div>
@@ -151,7 +143,7 @@ export default function Example() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    className="py-3 outline-none border-gray-100 shadow-sm px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full border border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
                   />
                 </div>
               </div>
@@ -170,7 +162,7 @@ export default function Example() {
                     <select
                       id="country"
                       name="country"
-                      className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+                      className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-primary focus:border-primary rounded-md"
                     >
                       <option>US</option>
                       <option>CA</option>
@@ -182,7 +174,7 @@ export default function Example() {
                     name="phone-number"
                     id="phone-number"
                     autoComplete="tel"
-                    className="py-3 outline-none border-gray-100 shadow-sm px-4 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full pl-20 border border-gray-100 shadow-sm focus:ring-primary focus:border-primary rounded-md"
                     placeholder="+1 (555) 987-6543"
                   />
                 </div>
@@ -199,7 +191,7 @@ export default function Example() {
                     id="message"
                     name="message"
                     rows={4}
-                    className="py-3 outline-none px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                    className="py-3 px-4 block w-full shadow-sm focus:ring-primary focus:border-primary border border-gray-300 rounded-md"
                     defaultValue={""}
                   />
                 </div>
@@ -212,7 +204,7 @@ export default function Example() {
                       onChange={setAgreed}
                       className={classNames(
                         agreed ? "bg-primary" : "bg-gray-200",
-                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                        "relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                       )}
                     >
                       <span className="sr-only">Agree to policies</span>
@@ -249,7 +241,13 @@ export default function Example() {
               <div className="sm:col-span-2">
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                  disabled={!agreed}
+                  className={classNames(
+                    "w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white",
+                    agreed
+                      ? "bg-primary hover:bg-green-600"
+                      : "bg-gray-300 cursor-not-allowed"
+                  )}
                 >
                   Let's talk
                 </button>
