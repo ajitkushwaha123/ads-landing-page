@@ -77,19 +77,18 @@ const Review = () => {
   return (
     <div
       id="our-customers"
-      className="px-[20px] md:mx-[80px] overflow-x-hidden"
+      className="overflow-x-hidden"
     >
       <Title preTitle="Our" title="Customers" />
 
       <div className="pt-[20px] md:pt-[40px]">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={10}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: false,
           }}
-          navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
           slidesPerView={
@@ -120,7 +119,6 @@ const Review = () => {
                         src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
                         alt="star.svg"
                       />
-                      {/* More star images... */}
                     </div>
 
                     <div className="absolute bottom-[-60px] right-[-80px]">
