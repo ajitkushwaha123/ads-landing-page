@@ -4,14 +4,21 @@ import Image from "next/image";
 import Video from "./Video";
 
 const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // Set a default value for windowWidth, which will be updated in useEffect
+  const [windowWidth, setWindowWidth] = useState(0);
 
+  // Only run this effect on the client-side (after mounting)
   useEffect(() => {
+    // Set the initial window width after component mounts
+    setWindowWidth(window.innerWidth);
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+
     window.addEventListener("resize", handleResize);
 
+    // Cleanup event listener on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -56,8 +63,9 @@ const Hero = () => {
             <div className="px-[20px] hidden md:block">
               <Video width={810} />
             </div>
+            {/* Ensure that windowWidth is only used after mounting */}
             <div className="px-[20px] md:hidden">
-              <Video width={windowWidth - 40} />
+              {windowWidth > 0 && <Video width={windowWidth - 40} />}
             </div>
           </div>
         </div>

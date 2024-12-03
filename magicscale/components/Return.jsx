@@ -17,12 +17,6 @@ const Return = () => {
           />
 
           <p className="md:text-[28px] text-[20px] pt-[15px] text-center font-bold">
-            If You are Not Satisfied with Our Services, We will Refund 100% of
-            Your Money. No Questions Asked. Guaranteed!
-            <span className="font-extrabold"> Promise! </span>
-          </p>
-
-          <p className="md:text-[28px] text-[20px] pt-[15px] text-center font-bold">
             If You&#39;re Not Satisfied with Our Services, We will Refund 100%
             of Your Money. No Questions Asked. Guaranteed!
             <span className="font-extrabold"> Promise! </span>

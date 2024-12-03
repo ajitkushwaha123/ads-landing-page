@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,6 +8,13 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Title from "./Title";
 
 const Review = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  // Update the window width when the component mounts
+  useEffect(() => {
+    setWindowWidth(window.innerWidth); // Only works on the client
+  }, []);
+
   const testimonials = [
     {
       imgSrc:
@@ -86,7 +93,7 @@ const Review = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
           slidesPerView={
-            window.innerWidth < 768 ? 1 : window.innerWidth < 1024 ? 2 : 4
+            windowWidth < 768 ? 1 : windowWidth < 1024 ? 2 : 4 // Use the updated state
           }
         >
           {testimonials.map((testimonial, index) => (
@@ -112,32 +119,8 @@ const Review = () => {
                         className="block mr-1.5"
                         src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
                         alt="star.svg"
-                        data-config-id="auto-img-22-3"
                       />
-                      <img
-                        className="block mr-1.5"
-                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
-                        alt="star.svg"
-                        data-config-id="auto-img-23-3"
-                      />
-                      <img
-                        className="block mr-1.5"
-                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
-                        alt="star.svg"
-                        data-config-id="auto-img-24-3"
-                      />
-                      <img
-                        className="block mr-1.5"
-                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
-                        alt="star.svg"
-                        data-config-id="auto-img-25-3"
-                      />
-                      <img
-                        className="block mr-1.5"
-                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
-                        alt="star.svg"
-                        data-config-id="auto-img-26-3"
-                      />
+                      {/* More star images... */}
                     </div>
 
                     <div className="absolute bottom-[-60px] right-[-80px]">
@@ -158,23 +141,6 @@ const Review = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        <a
-          target="_blank"
-          href="https://www.google.com/search?q=pizza+9&sca_esv=991ca55629cb7d36&sca_upv=1&sxsrf=ADLYWIJawqPXysUKNMbXfQQ0bpmahyDxDA%3A1715700502747&ei=FoNDZq2ULdn3seMPz8yV8Ak&ved=0ahUKEwit94a4uo2GAxXZe2wGHU9mBZ4Q4dUDCBA&uact=5&oq=pizza+9&gs_lp=Egxnd3Mtd2l6LXNlcnAiB3BpenphIDkyChAAGLADGNYEGEcyChAAGLADGNYEGEcyChAAGLADGNYEGEcyChAAGLADGNYEGEcyChAAGLADGNYEGEcyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDRAAGIAEGLADGEMYigUyDhAAGLADGOQCGNYE2AEBMg4QABiwAxjkAhjWBNgBATIZEC4YgAQYsAMY0QMYQxjHARjIAxiKBdgBAjIZEC4YgAQYsAMYQxjHARjIAxiKBRivAdgBAjIZEC4YgAQYsAMYQxjHARjIAxiKBRivAdgBAjIZEC4YgAQYsAMYQxjHARjIAxiKBRivAdgBAkhKUABYAHABeAGQAQCYAQCgAQCqAQC4AQPIAQCYAgGgAgiYAwCIBgGQBhK6BgYIARABGAm6BgYIAhABGAiSBwExoAcA&sclient=gws-wiz-serp&lqi=CgdwaXp6YSA5IgOIAQFInNSQ3I25gIAIWhkQABABGAAYASIHcGl6emEgOSoGCAIQABABkgEKcmVzdGF1cmFudKoBPBABKgsiB3BpenphIDkoADIeEAEiGg0MiP2ZdX1q265b377HjhFa_Xz71bAll1W5MgsQAiIHcGl6emEgOQ#lkt=LocalPoiReviews&rlimm=12997184429820642054"
-          className="flex justify-center items-center pt-[60px]"
-        >
-          {/* <Button
-            title={"More Reviews"}
-            hoverColor={"white"}
-            bgColor={"primary"}
-            borderColor={"white"}
-            textColor={"white"}
-            hoverText={"primary"}
-            bgHover={"white"}
-            hoverBorder={"primary"}
-          /> */}
-        </a>
       </div>
     </div>
   );

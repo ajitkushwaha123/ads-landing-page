@@ -1,5 +1,4 @@
 import React from "react";
-
 const Video = ({ width }) => {
   return (
     <div className={`w-[${width}] flex justify-center items-center`}>
