@@ -10,15 +10,15 @@ const Return = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="max-w-[1120px] justify-center items-center flex flex-col px-10">
           <Image
-            src={"/money-back.png"}
+            src={'/money-back.png'}
             width={300}
             height={300}
             alt="money-back-gurantee"
           />
 
           <p className="md:text-[28px] text-[20px] pt-[15px] text-center font-bold">
-            If You're Not Satisfied with Our Services, We’ll Refund 100% of Your
-            Money. No Questions Asked. Guaranteed!"
+            If You are Not Satisfied with Our Services, We will Refund 100% of Your
+            Money. No Questions Asked. Guaranteed!
             <span className="font-extrabold"> Promise! </span>
           </p>
 
@@ -28,7 +28,7 @@ const Return = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Return;
