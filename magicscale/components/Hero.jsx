@@ -33,7 +33,8 @@ const Hero = () => {
         <div className="md:max-w-[1120px] w-full py-[25px] md:py-[50px]">
           <h2 className="md:text-7xl text-[#3f3f3f] text-2xl text-center font-extrabold">
             <span className="text-primary">Unlock Your Restaurant’s </span>
-            Potential with MagicScale - Swiggy, Zomato Onboarding & FSSAI {""}
+            Potential with MagicScale - <span className="text-orange-400">Swiggy</span> ,
+            <span className="text-red-400"> Zomato</span> Onboarding & FSSAI {""}
             <span className="underline">Licensing !</span>
           </h2>
 

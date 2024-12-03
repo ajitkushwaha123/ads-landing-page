@@ -9,12 +9,6 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <meta
-          name="facebook-domain-verification"
-          content="dpmcab7a29fw9hk1vhwxi6xn0gi9d0"
-        />
-      </Head>
       <Hero />
       <Features />
       <Reviews />

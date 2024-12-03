@@ -9,7 +9,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <head>
+        <meta
+          name="facebook-domain-verification"
+          content="dpmcab7a29fw9hk1vhwxi6xn0gi9d0"
+        />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
