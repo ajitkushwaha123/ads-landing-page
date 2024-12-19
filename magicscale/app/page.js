@@ -6,15 +6,16 @@ import Hero from "@/components/Hero";
 import Return from "@/components/Return";
 import Reviews from "@/components/Reviews";
 import Head from "next/head";
-import WhatsappFloat from "@/components/WhatsappFloat";
+// import WhatsappFloat from "@/components/WhatsappFloat";
+import WhatsAppFloatingIcon from "@/components/WhatsappFloat";
 
 export default function Home() {
   return (
     <div>
-      <WhatsappFloat />
+      <WhatsAppFloatingIcon />
       <Hero />
       <Features />
-      <BrandCarousel />
+      {/* <BrandCarousel /> */}
       <Reviews />
       <Return />
       <Faqs />
