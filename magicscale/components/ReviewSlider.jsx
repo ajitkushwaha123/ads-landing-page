@@ -75,10 +75,7 @@ const Review = () => {
   ];
 
   return (
-    <div
-      id="our-customers"
-      className="overflow-x-hidden"
-    >
+    <div id="our-customers" className="overflow-x-hidden">
       <Title preTitle="Our" title="Customers" />
 
       <div className="pt-[20px] md:pt-[40px]">
@@ -114,6 +111,26 @@ const Review = () => {
                       {testimonial.review}
                     </p>
                     <div className="flex items-center">
+                      <img
+                        className="block mr-1.5"
+                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
+                        alt="star.svg"
+                      />
+                      <img
+                        className="block mr-1.5"
+                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
+                        alt="star.svg"
+                      />
+                      <img
+                        className="block mr-1.5"
+                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
+                        alt="star.svg"
+                      />
+                      <img
+                        className="block mr-1.5"
+                        src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
+                        alt="star.svg"
+                      />
                       <img
                         className="block mr-1.5"
                         src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"
