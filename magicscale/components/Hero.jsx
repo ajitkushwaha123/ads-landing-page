@@ -80,15 +80,18 @@ const Hero = () => {
                 <span> Whatsapp</span>
               </button>
             </Link>
-            <Link href={"/call-request"}>
-              <button className="flex hover:text-[#363636] font-bold animate-bounce md:ml-5 ml-3 justify-between text-[16px] md:text-[23px] bg-white items-center text-primary border-primary hover:bg-white hover:border-primary border-2 px-[12px] md:px-[20px] py-2 md:py-4 rounded-lg">
-                <img
-                  className="md:w-[40px] w-[20px] mr-2 md:mr-3"
-                  src="/customer-service.png"
-                />
-                Request Call
-              </button>
-            </Link>
+            <a
+              href="tel:8826073117"
+              className="flex hover:text-[#363636] font-bold animate-bounce md:ml-5 ml-3 justify-between text-[16px] md:text-[23px] bg-white items-center text-primary border-primary hover:bg-white hover:border-primary border-2 px-[12px] md:px-[20px] py-2 md:py-4 rounded-lg"
+              aria-label="Request Call"
+            >
+              <img
+                className="md:w-[40px] w-[20px] mr-2 md:mr-3"
+                src="/customer-service.png"
+                alt="Customer Service"
+              />
+              Connect Call
+            </a>
           </div>
         </div>
       </div>
