@@ -1,4 +1,4 @@
-import localFont from "next/font/local";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
@@ -14,7 +14,8 @@ export default function RootLayout({ children }) {
           name="facebook-domain-verification"
           content="dpmcab7a29fw9hk1vhwxi6xn0gi9d0"
         />
-        <script>
+        {/* Facebook Pixel */}
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
           n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -25,7 +26,7 @@ export default function RootLayout({ children }) {
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '553409800818621');
           fbq('track', 'PageView');`}
-        </script>
+        </Script>
         <noscript>
           <img
             height="1"
@@ -34,6 +35,20 @@ export default function RootLayout({ children }) {
             src="https://www.facebook.com/tr?id=553409800818621&ev=PageView&noscript=1"
           />
         </noscript>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2LEWTKJM30"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2LEWTKJM30');
+          `}
+        </Script>
       </head>
       <body className="antialiased">{children}</body>
     </html>
