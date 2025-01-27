@@ -4,7 +4,7 @@ import SpotLightCard from "./SpotLightCard";
 const TweetComponent = ({ avatar, title, designation, review }) => {
   return (
     <SpotLightCard
-      className="custom-spotlight-card h-[260px]"
+      className="custom-spotlight-card w-[320px] md:w-[auto] h-[260px]"
       spotlightColor="rgba(0, 229, 255, 0.2)"
     >
       <p className="py-6">{review}</p>
@@ -23,7 +23,7 @@ const TweetComponent = ({ avatar, title, designation, review }) => {
           </button>
         </div>
 
-        <div className="flex items-start">
+        <div className="md:flex hidden items-start">
           <img
             className="block mr-1.5"
             src="https://shuffle.dev/saturn-assets/images/testimonials/star.svg"

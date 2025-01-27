@@ -137,7 +137,7 @@ export const InfiniteMovingCards = ({
       >
         {testimonials.map((item, idx) => (
           <li key={item.title}>
-            <blockquote className="md:w-max">
+            <blockquote className="w-[320px] md:w-auto">
               <TweetComponent
                 avatar={item.imgSrc}
                 title={item.title}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
+import { Timeline } from "@/components/ui/Timeline";
 import SpotLightCard from "../Testimonials/SpotLightCard";
 import Plan from "./Plan";
 
