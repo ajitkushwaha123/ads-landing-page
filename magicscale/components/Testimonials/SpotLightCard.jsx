@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 // import { Sparkles } from 'lucide-react';
 
 const SpotLightCard = ({
+  showSvg=true,
   children,
   className = "",
   spotlightColor = "rgba(255, 255, 255, 0.25)",
@@ -47,7 +48,7 @@ const SpotLightCard = ({
       onMouseLeave={handleMouseLeave}
       className={`relative rounded-3xl max-w-md border text-white border-neutral-800 bg-neutral-900 overflow-hidden py-6 px-6 ${className}`}
     >
-      <svg
+      {showSvg && <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -64,7 +65,7 @@ const SpotLightCard = ({
         <path d="M22 5h-4" />
         <path d="M4 17v2" />
         <path d="M5 18H3" />
-      </svg>
+      </svg>}
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 ease-in-out"
         style={{

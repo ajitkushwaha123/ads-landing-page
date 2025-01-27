@@ -27,7 +27,7 @@ const Founder = () => {
 
         <div className="lg:absolute my-10 lg:my-0 lg:left-20 lg:bottom-36">
           <SpotLightCard
-            className="custom-spotlight-card"
+            className="custom-spotlight-card w-[320px] md:w-[auto] h-[260px] md:h-[auto]"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
             <i size={40} className="fa fa-lock text-large"></i>
@@ -46,7 +46,7 @@ const Founder = () => {
 
         <div className="lg:absolute mb-16 lg:mb-0 lg:right-32 lg:bottom-10">
           <SpotLightCard
-            className="custom-spotlight-card"
+            className="custom-spotlight-card w-[320px] md:w-[auto] h-[260px] md:h-[auto]"
             spotlightColor="rgba(0, 229, 255, 0.2)"
           >
             <i size={40} className="fa fa-lock text-large"></i>
