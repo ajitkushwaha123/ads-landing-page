@@ -8,15 +8,21 @@ import Reviews from "@/components/Reviews";
 import Head from "next/head";
 // import WhatsappFloat from "@/components/WhatsappFloat";
 import WhatsAppFloatingIcon from "@/components/WhatsappFloat";
+import CustomerReview from "@/components/Testimonials/CustomerReview";
+import Founder from "@/components/Founder/Founder";
+import Timestamp from "@/components/Timeline/Timestamp";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <WhatsAppFloatingIcon />
       <Hero />
+      <CustomerReview />
+      <Founder />
+      <Timestamp />
       <Features />
       {/* <BrandCarousel /> */}
-      <Reviews />
+      {/* <Reviews /> */}
       <Return />
       <Faqs />
       <Footer />

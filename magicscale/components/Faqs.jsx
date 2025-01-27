@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Title from "./Title";
+import { SpotlightBackground } from "./ui/SpotlightBackground";
 
 const Faqs = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
@@ -8,12 +9,16 @@ const Faqs = () => {
   const toggleQuestion = (questionId) => {
     setOpenQuestion(openQuestion === questionId ? null : questionId);
   };
-
+// pt-8 bg-primary border-b-4 border-primary  rounded-md flex flex-col antialiased p-1 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden
   return (
-    <section id="faqs" className="py-10 bg-secondary sm:py-12 lg:py-20">
+    <section
+      id="faqs"
+      className="py-10 border-b-4 text-white border-primary sm:py-12 lg:py-20 dark:bg-black dark:bg-grid-white/[0.05] relative overflow-hidden"
+    >
+      <SpotlightBackground />
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <Title preTitle={"Frequently"} title={"Asked Question"} />
-        <div className="max-w-5xl mx-auto mt-8 space-y-4 md:mt-16">
+        <div className="max-w-5xl mx-auto mt-8 space-y-6 md:mt-16">
           {[
             {
               id: "question1",
@@ -77,14 +82,14 @@ const Faqs = () => {
           ].map((faq) => (
             <div
               key={faq.id}
-              className="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer rounded-md hover:bg-gray-50"
+              className="transition-all group hover:text-black duration-200 bg-black border border-gray-200 shadow-lg cursor-pointer rounded-md hover:bg-gray-50"
             >
               <button
                 type="button"
                 onClick={() => toggleQuestion(faq.id)}
                 className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span className="flex text-lg font-semibold text-black">
+                <span className="flex text-lg font-semibold text-white group-hover:text-primary">
                   {faq.question}
                 </span>
                 <svg
@@ -105,7 +110,7 @@ const Faqs = () => {
                 </svg>
               </button>
               {openQuestion === faq.id && (
-                <div className="px-4 pb-5 sm:px-6 sm:pb-6">
+                <div className="px-4 pb-5 text-white group-hover:text-black sm:px-6 sm:pb-6">
                   <p>{faq.answer}</p>
                 </div>
               )}
