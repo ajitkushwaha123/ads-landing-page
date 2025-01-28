@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <div className="">
-      <div className="bg-primary text-white p-0.5 sm:text-[18px] md:text-[1.8rem] text-center w-full">
+      <div className="bg-primary text-white border-b-4 border-primary sm:text-[18px] md:text-[1.8rem] text-center w-full">
         <p className="font-bold">
           MAGICSCALE'S ULTIMATE RESTAURANT CONSULTANCY EXPERIENCE
         </p>
@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
           <SpotlightBackground />
           <div className=" p-4 md:my-16 my-6 text-white max-w-7xl  mx-auto relative z-10  w-full pt-12 md:pt-0">
-            <h2 className="md:text-7xl text-3xl px-2 text-center font-extrabold">
+            <h2 className="md:text-7xl text-3xl px-4 text-center font-extrabold">
               <span className="text-primary">Unlock Your Restaurant’s </span>
               Potential with MagicScale -{" "}
               <span className="text-orange-600">Swiggy</span> ,
@@ -43,7 +43,7 @@ const Hero = () => {
               <span className="underline">Licensing !</span>
             </h2>
 
-            <p className="text-[15px] md:text-[28px] text-center py-[20px] text-[#bebebe] font-black">
+            <p className="text-[15px] md:text-[28px] text-center py-[24px] text-[#bebebe] font-black">
               ( No Expertise Needed – We Handle Everything for You! )
             </p>
 
