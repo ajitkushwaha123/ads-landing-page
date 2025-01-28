@@ -32,7 +32,7 @@ const LaptopMockup = () => {
             loop={true}
             className="absolute top-0 left-0 w-full h-full"
             autoplay={{
-              delay: 3000,
+              delay: 3000*20*60,
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
