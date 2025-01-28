@@ -11,16 +11,23 @@ import WhatsAppFloatingIcon from "@/components/WhatsappFloat";
 import CustomerReview from "@/components/Testimonials/CustomerReview";
 import Founder from "@/components/Founder/Founder";
 import Timestamp from "@/components/Timeline/Timestamp";
+import StickyButton from "@/components/StickyButton";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden relative">
+      <div
+        className="fixed sm:hidden w-full
+       bottom-0 right-0 z-50"
+      >
+        <StickyButton />
+      </div>
       <WhatsAppFloatingIcon />
       <Hero />
       <Timestamp />
       <CustomerReview />
       <Founder />
-      <Features />
+      {/* <Features /> */}
       {/* <BrandCarousel /> */}
       {/* <Reviews /> */}
       <Return />
