@@ -6,9 +6,9 @@ import Title from "../Title";
 
 const Founder = () => {
   return (
-    <div className="bg-pattern2 min-h-screen lg:h-screen relative text-white pt-10 bg-primary border-b-4 border-primary  rounded-lg flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
+    <div className="bg-pattern2 min-h-screen lg:h-screen relative text-white pt-6 md:pt-10 bg-primary border-b-4 border-primary  rounded-lg flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
       <SpotlightBackground />
-      <div className="pb-8">
+      <div className="pb-6">
         <Title preTitle={"MEET"} title={"OUR FOUNDERS"} />
       </div>
       <div className="w-full mt-12 flex-col lg:mt-0 overflow-hidden flex justify-center items-center px-[50px]">
@@ -18,7 +18,7 @@ const Founder = () => {
             src="./download.png"
           />
         </div>
-        <div className="text-white top-32 lg:top-48 right-5 lg:right-48 absolute flex flex-col justify-center items-center text-3xl lg:text-7xl font-poppins font-bold">
+        <div className="text-white top-24 lg:top-48 right-5 lg:right-48 absolute flex flex-col justify-center items-center text-3xl lg:text-7xl font-poppins font-bold">
           <h2>Akash</h2>
           <div className="text-primary border-2 rounded-full border-dashed px-7 py-2 border-primary">
             <h3>Verma</h3>

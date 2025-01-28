@@ -4,7 +4,7 @@ import SpotLightCard from "./SpotLightCard";
 const TweetComponent = ({ avatar, title, designation, review }) => {
   return (
     <SpotLightCard
-      showSvg={true}
+      showSvg={false}
       className="custom-spotlight-card w-[320px] md:w-[auto] h-[260px]"
       spotlightColor="rgba(0, 229, 255, 0.2)"
     >

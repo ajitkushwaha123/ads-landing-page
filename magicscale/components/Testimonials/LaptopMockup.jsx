@@ -25,7 +25,7 @@ const LaptopMockup = () => {
     <div className="flex mb-12 items-center justify-center px-4 sm:px-8">
       <div className="w-full max-w-5xl">
         {/* Laptop Screen */}
-        <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] w-[300px] sm:w-[500px] md:w-[700px] lg:w-[900px]">
+        <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[168.75px] sm:h-[300px] md:h-[400px] lg:h-[500px] w-[300px] sm:w-[500px] md:w-[700px] lg:w-[900px]">
           <Swiper
             spaceBetween={10}
             slidesPerView={1}

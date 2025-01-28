@@ -34,7 +34,7 @@ const Hero = () => {
         <div className="w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
           <SpotlightBackground />
           <div className=" p-4 md:my-16 my-6 text-white max-w-7xl  mx-auto relative z-10  w-full pt-12 md:pt-0">
-            <h2 className="md:text-7xl text-3xl px-4 text-center font-extrabold">
+            <h2 className="md:text-7xl text-3xl px-2 text-center font-extrabold">
               <span className="text-primary">Unlock Your Restaurant’s </span>
               Potential with MagicScale -{" "}
               <span className="text-orange-600">Swiggy</span> ,
