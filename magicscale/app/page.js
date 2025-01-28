@@ -17,9 +17,9 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <WhatsAppFloatingIcon />
       <Hero />
+      <Timestamp />
       <CustomerReview />
       <Founder />
-      <Timestamp />
       <Features />
       {/* <BrandCarousel /> */}
       {/* <Reviews /> */}

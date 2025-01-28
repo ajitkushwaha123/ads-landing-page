@@ -54,7 +54,7 @@ const Plan = ({ data }) => {
           return (
             <div
               key={index}
-              className={`absolute flex justify-center items-center`}
+              className={`md:absolute flex justify-center items-center`}
               style={{
                 marginTop: `${margin * (index + 1) + 50 * (index)}px`,
                 left: "48.7%",

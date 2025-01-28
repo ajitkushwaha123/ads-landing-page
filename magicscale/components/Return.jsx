@@ -1,10 +1,12 @@
 import React from "react";
 import Title from "./Title";
 import Image from "next/image";
+import { SpotlightBackground } from "./ui/SpotlightBackground";
 
 const Return = () => {
   return (
-    <div className="w-full py-8 md:py-20">
+    <div className="w-full py-8 text-white bg-black dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden md:py-20">
+      {/* <SpotlightBackground /> */}
       <Title preTitle={"100% Money"} title={"Back Guarantee"} />
 
       <div className="flex flex-col justify-center items-center">

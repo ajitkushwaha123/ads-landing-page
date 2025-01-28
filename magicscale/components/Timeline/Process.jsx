@@ -2,6 +2,8 @@ import React from "react";
 import { Timeline } from "@/components/ui/Timeline";
 import SpotLightCard from "../Testimonials/SpotLightCard";
 import Plan from "./Plan";
+import Title from "../Title";
+// import { SpotlightBackground } from "../ui/SpotlightBackground"
 
 export function Process() {
   const data = [
@@ -9,7 +11,7 @@ export function Process() {
       content: "2024",
       title: (
         <div>
-          <SpotLightCard className="w-full min-w-[500px]">
+          <SpotLightCard className="w-full md:min-w-[500px]">
             <h2 className="font-semibold text-primary mt-2 py-1 text-lg">
               1. Get Your FSSAI License In Just 24hrs
             </h2>
@@ -28,7 +30,7 @@ export function Process() {
       content: "2024",
       title: (
         <div>
-          <SpotLightCard className="w-full min-w-[500px]">
+          <SpotLightCard className="w-full md:min-w-[500px]">
             <h2 className="font-semibold text-primary mt-2 py-1 text-lg">
               2. Get Listed on Zomato & Swiggy
             </h2>
@@ -47,7 +49,7 @@ export function Process() {
       content: "2024",
       title: (
         <div>
-          <SpotLightCard className="w-full min-w-[500px]">
+          <SpotLightCard className="w-full md:min-w-[500px]">
             <h2 className="font-medium text-primary py-1 text-lg">
               3. Professional Menu Listing on All Platforms
             </h2>
@@ -64,7 +66,7 @@ export function Process() {
       content: "2024",
       title: (
         <div>
-          <SpotLightCard className="w-full min-w-[500px]">
+          <SpotLightCard className="w-full md:min-w-[500px]">
             <h2 className="font-medium text-primary py-1 text-lg">
               4.Scale Up Your Business 
             </h2>
@@ -82,8 +84,21 @@ export function Process() {
       <div className="hidden md:block">
         <Plan data={data} />
       </div>
-      <div className="md:hidden">
-        <Timeline data={data} />
+      <div className="md:hidden bg-pattern2 text-white py-12 bg-primary border-b-4 border-primary rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center">
+        <div className="pb-8 mt-5">
+          <Title preTitle={"SCALE YOUR"} title={"RESTAURANT BUISNESS"} />
+        </div>
+        {/* <SpotlightBackground /> */}
+        {data.map((item, index) => {
+          return (
+            <div
+              className="flex mb-6 px-[10px] justify-center items-center"
+              key={index}
+            >
+              {item.title}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
