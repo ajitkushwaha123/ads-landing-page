@@ -80,7 +80,7 @@ const CustomerReview = () => {
         speed="slow"
       />
 
-      <div className="mt-10">
+      <div className="my-10">
         <AnimatedTooltip items={testimonials} />
       </div>
 
