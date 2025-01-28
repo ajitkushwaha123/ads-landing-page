@@ -84,9 +84,9 @@ const CustomerReview = () => {
         <AnimatedTooltip items={testimonials} />
       </div>
 
-      <div className="w-full flex flex-col mt-12 justify-center items-center">
+{/*       <div className="w-full flex flex-col mt-12 justify-center items-center">
         <LaptopMockup />
-      </div>
+      </div> */}
 
       {/* <div className="w-full max-h-screen overflow-hidden flex justify-center items-center px-[50px]">
         <div className="w-[60%] mr-12">
