@@ -16,13 +16,15 @@ import StickyButton from "@/components/StickyButton";
 export default function Home() {
   return (
     <div className="overflow-x-hidden relative">
-      <div
+      {/* <div
         className="fixed sm:hidden w-full
        bottom-0 right-0 z-50"
       >
         <StickyButton />
+      </div> */}
+      <div className="z-100">
+        <WhatsAppFloatingIcon />
       </div>
-      <WhatsAppFloatingIcon />
       <Hero />
       <Timestamp />
       <CustomerReview />
