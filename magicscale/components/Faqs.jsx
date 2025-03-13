@@ -9,11 +9,11 @@ const Faqs = () => {
   const toggleQuestion = (questionId) => {
     setOpenQuestion(openQuestion === questionId ? null : questionId);
   };
-// pt-8 bg-primary border-b-4 border-primary  rounded-md flex flex-col antialiased p-1 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden
+// pt-8 bg-primary border-b-4 border-primary  rounded-md flex flex-col antialiased p-1 bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden
   return (
     <section
       id="faqs"
-      className="py-10 border-b-4 text-white border-primary sm:py-12 lg:py-20 dark:bg-black dark:bg-grid-white/[0.05] relative overflow-hidden"
+      className="py-10 border-b-4 text-white border-primary sm:py-12 lg:py-20 bg-black bg-grid-white/[0.05] relative overflow-hidden"
     >
       <SpotlightBackground />
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
