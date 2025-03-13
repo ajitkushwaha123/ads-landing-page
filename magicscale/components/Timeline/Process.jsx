@@ -84,7 +84,7 @@ export function Process() {
       <div className="hidden md:block">
         <Plan data={data} />
       </div>
-      <div className="md:hidden bg-pattern2 text-white py-12 bg-primary border-b-4 border-primary rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center">
+      <div className="md:hidden bg-pattern2 text-white py-12 border-b-4 rounded-md flex flex-col antialiased bg-black items-center justify-center">
         <div className="pb-8 mt-5">
           <Title preTitle={"SCALE YOUR"} title={"RESTAURANT BUISNESS"} />
         </div>
