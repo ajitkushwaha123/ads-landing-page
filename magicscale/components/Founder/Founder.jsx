@@ -6,16 +6,16 @@ import Title from "../Title";
 
 const Founder = () => {
   return (
-    <div className="bg-pattern2 min-h-screen lg:h-screen relative text-white pt-6 md:pt-10 bg-primary border-b-4 border-primary  rounded-lg flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center overflow-hidden">
+    <div className="min-h-screen lg:h-screen relative text-white pt-6 md:pt-10 border-b-4 border-primary  rounded-lg flex flex-col antialiased bg-black bg-grid-white/[0.05] items-center justify-center overflow-hidden">
       <SpotlightBackground />
       <div className="pb-6 md:mt-0 mt-6">
         <Title preTitle={"MEET"} title={"OUR FOUNDERS"} />
       </div>
-      <div className="w-full mt-12 flex-col lg:mt-0 overflow-hidden flex justify-center items-center px-[50px]">
-        <div className="rounded-xl w-[340px] lg:w-[420px]">
+      <div className="w-full mt-10 flex-col lg:mt-0 overflow-hidden flex justify-center items-center px-[50px]">
+        <div className="rounded-xl border-4-primary flex justify-center items-center w-[340px] lg:w-[400px]">
           <img
-            className="w-[100%] rounded-full h-[100%]"
-            src="./download.png"
+            className="w-[80%] md:w-[100%] md:h-[100%] rounded-full border-4 border-primary  h-[80%]"
+            src="https://media.licdn.com/dms/image/v2/D5603AQFfU9WY43Ajcg/profile-displayphoto-shrink_800_800/B56ZNoPla8GwAk-/0/1732620736917?e=1747267200&v=beta&t=eC7Hn420LDUnqiveS7Djt9I5vx8ElEY_rfKCCYfpVF0"
           />
         </div>
         <div className="text-white top-28 lg:top-48 right-3 lg:right-48 absolute flex flex-col justify-center items-center text-3xl lg:text-7xl font-poppins font-bold">
@@ -32,14 +32,14 @@ const Founder = () => {
           >
             <i size={40} className="fa fa-lock text-large"></i>
             <h2 className="font-medium py-1 text-lg">
-              Netaji Subhas University of Technology
+              3+ years of experience in restaurants.
             </h2>
             <p className="text-sm">
-              Ppursued my Bachelor's degree in Electronics and Communication
-              Engineering (ECE)
+              Swiggy & Zomato onboarding, menu uploads, and brand setup expert
+              with 3+ years experience, serving 500+ restaurants
             </p>
             <button className="mt-4 rounded-lg border-2 px-2.5 py-1.5">
-              EDUCATION BACKGROUND
+              Experience
             </button>
           </SpotLightCard>
         </div>
@@ -54,8 +54,8 @@ const Founder = () => {
               Worked with over 500+ Restaurants
             </h2>
             <p className="text-sm">
-              Ppursued my Bachelor's degree in Electronics and Communication
-              Engineering (ECE)
+              We streamline menu management, pricing, and product listings with
+              automation, cutting upload time and manual effort.
             </p>
             <button className="mt-4 rounded-lg border-2 px-2.5 py-1.5">
               Experience

@@ -52,7 +52,7 @@ const Faqs = () => {
               question:
                 "What documents are required for onboarding to Swiggy and Zomato?",
               answer:
-                "You’ll need your FSSAI license, GST details, a valid ID proof, bank account information, and restaurant details such as the menu and photos.",
+                "You’ll need your FSSAI license, a valid ID proof, bank account information, and restaurant details such as the menu and photos , GST (optional).",
             },
             {
               id: "question6",
