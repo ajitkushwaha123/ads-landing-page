@@ -86,7 +86,7 @@ export function Process() {
       </div>
       <div className="md:hidden text-white py-12 border-b-4 rounded-md flex flex-col antialiased bg-black items-center justify-center">
         <div className="pb-8 mt-5">
-          <Title preTitle={"SCALE YOUR"} title={"RESTAURANT BUISNESS"} />
+          <Title preTitle={"SCALE UP YOUR"} title={"RESTAURANT"} />
         </div>
         {/* <SpotlightBackground /> */}
         {data.map((item, index) => {
