@@ -68,7 +68,7 @@ const testimonials = [
 
 const CustomerReview = () => {
   return (
-    <div className="pt-8 border-b-4 rounded-md flex flex-col antialiased p-1 bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="py-8 border-b-4 bg-black rounded-md flex flex-col antialiased p-1 items-center justify-center relative overflow-hidden">
       {/* <SpotlightBackground /> */}
       <div className="my-8 text-white">
         <Title preTitle={"Our"} title={"Customers"} />
@@ -80,9 +80,9 @@ const CustomerReview = () => {
         speed="slow"
       />
 
-      <div className="my-10">
+      {/* <div className="my-10">
         <AnimatedTooltip items={testimonials} />
-      </div>
+      </div> */}
 
 {/*       <div className="w-full flex flex-col mt-12 justify-center items-center">
         <LaptopMockup />
