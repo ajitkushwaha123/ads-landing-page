@@ -46,10 +46,11 @@ export default {
       backgroundImage: {
         "dotted-background": "url('/bg.png')",
         backy:
-          "url('https://i.pinimg.com/736x/32/49/14/324914bb1233fa62e640c6a1133d550c.jpg')",
+          "url('https://i.pinimg.com/736x/39/df/96/39df964a27b29b733fb8eff34c1bd97a.jpg')",
         pattern1: "url('/pattern1.png')",
         pattern2: "url('/pattern2.png')",
-        pattern3: "url('/pattern3.png')",
+        pattern3:
+          "url('https://i.pinimg.com/736x/8a/3d/c3/8a3dc342ef49c00316c0482328c46bdb.jpg')",
         pattern4:
           "url('https://dsathemes.com/html/soltech_1.1/files/images/hero-1.jpg')",
       },

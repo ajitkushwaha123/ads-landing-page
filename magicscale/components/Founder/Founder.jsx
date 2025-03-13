@@ -6,7 +6,7 @@ import Title from "../Title";
 
 const Founder = () => {
   return (
-    <div className="min-h-screen dark:bg-grid-white/[0.05] lg:h-screen relative text-white pt-6 md:pt-10 border-b-4 border-primary rounded-lg flex flex-col antialiased bg-black items-center justify-center overflow-hidden">
+    <div className="min-h-screen lg:h-screen bg-backy relative text-white pt-6 md:pt-10 border-b-4 border-primary rounded-lg flex flex-col antialiased bg-black items-center justify-center overflow-hidden">
       <SpotlightBackground />
       <div className="pb-6 md:mt-0 mt-6">
         <Title preTitle={"MEET"} title={"OUR FOUNDERS"} />
