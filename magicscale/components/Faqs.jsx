@@ -87,9 +87,9 @@ const Faqs = () => {
               <button
                 type="button"
                 onClick={() => toggleQuestion(faq.id)}
-                className="flex items-center justify-between w-full px-4 py-5 sm:p-6"
+                className="flex items-start justify-between w-full px-4 py-5 sm:p-6"
               >
-                <span className="flex text-lg font-semibold text-white group-hover:text-primary">
+                <span className="flex text-start text-lg font-semibold text-white group-hover:text-primary">
                   {faq.question}
                 </span>
                 <svg
