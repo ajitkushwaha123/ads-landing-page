@@ -68,7 +68,6 @@ const Hero = () => {
               <div className="px-[20px] hidden md:block">
                 <Video width={810} />
               </div>
-              {/* Ensure that windowWidth is only used after mounting */}
               <div className="px-[20px] md:hidden">
                 {windowWidth > 0 && <Video width={360 - 40} />}
               </div>
