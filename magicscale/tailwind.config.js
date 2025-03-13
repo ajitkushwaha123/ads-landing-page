@@ -46,7 +46,7 @@ export default {
       backgroundImage: {
         "dotted-background": "url('/bg.png')",
         backy:
-          "url('https://i.pinimg.com/736x/39/df/96/39df964a27b29b733fb8eff34c1bd97a.jpg')",
+          "url('https://i.pinimg.com/736x/39/df/96/39daf964a27b29b733fb8eff34c1bd97a.jpg')",
         pattern1: "url('/pattern1.png')",
         pattern2: "url('/pattern2.png')",
         pattern3:

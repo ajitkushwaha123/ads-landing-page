@@ -68,8 +68,8 @@ const testimonials = [
 
 const CustomerReview = () => {
   return (
-    <div className="pt-8 bg-primary border-b-4 border-primary  rounded-md flex flex-col antialiased p-1 dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-      <SpotlightBackground />
+    <div className="pt-8 border-b-4 rounded-md flex flex-col antialiased p-1 bg-black bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      {/* <SpotlightBackground /> */}
       <div className="my-8 text-white">
         <Title preTitle={"Our"} title={"Customers"} />
       </div>
