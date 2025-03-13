@@ -3,13 +3,15 @@
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 import TweetComponent from "../Testimonials/TweetComponent";
+import ClientSlide from "../Testimonials/ClientSlide";
 
 export const InfiniteMovingCards = ({
-  items=[],
+  items = [],
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
   className,
+  clientCarousel=false,
 }) => {
   const containerRef = React.useRef(null);
   const scrollerRef = React.useRef(null);
@@ -79,12 +81,18 @@ export const InfiniteMovingCards = ({
         {items.map((item, idx) => (
           <li key={item.title}>
             <blockquote className="w-[320px] md:w-auto">
-              <TweetComponent
-                avatar={item.imgSrc}
-                title={item.title}
-                designation={item.designation}
-                review={item.review}
-              />
+              {clientCarousel === false ? (
+                <TweetComponent
+                  avatar={item.imgSrc}
+                  title={item.title}
+                  designation={item.designation}
+                  review={item.review}
+                />
+              ) : (
+                <div>
+                  <ClientSlide img={item.imgSrc}/>
+                </div>
+              )}
             </blockquote>
           </li>
         ))}
