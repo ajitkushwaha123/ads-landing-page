@@ -29,14 +29,14 @@ const services = [
 
 export default function OurServices() {
   return (
-    <div className="py-16 bg-black text-center text-white">
+    <div className="pt-16 bg-black text-center text-white">
       <Title preTitle={"Our"} title={"Services"} />
       <div className="grid py-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 px-6 md:px-16 mt-8">
         {services.map((service, index) => (
           <SpotLightCard
             key={index}
             showSvg={false}
-            className="p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 flex flex-col items-center"
+            className="p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 flex flex-col items-center"
           >
             <div className="p-3 rounded-full flex justify-center items-center">
               {service.icon}
