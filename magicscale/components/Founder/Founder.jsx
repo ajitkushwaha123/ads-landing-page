@@ -6,7 +6,7 @@ import Title from "../Title";
 
 const Founder = () => {
   return (
-    <div className="min-h-screen lg:h-screen relative text-white pt-6 md:pt-10 border-b-4 border-primary rounded-lg flex flex-col antialiased bg-black items-center justify-center overflow-hidden">
+    <div className="min-h-screen dark:bg-grid-white/[0.05] lg:h-screen relative text-white pt-6 md:pt-10 border-b-4 border-primary rounded-lg flex flex-col antialiased bg-black items-center justify-center overflow-hidden">
       <SpotlightBackground />
       <div className="pb-6 md:mt-0 mt-6">
         <Title preTitle={"MEET"} title={"OUR FOUNDERS"} />
@@ -35,8 +35,8 @@ const Founder = () => {
               3+ years of experience in restaurants.
             </h2>
             <p className="text-sm">
-              Swiggy & Zomato onboarding, menu uploads, and brand setup expert
-              with 3+ years experience, serving 500+ restaurants
+              Expert in brand setup, sales growth, and business scaling with 3+
+              years' experience serving 500+ restaurants.
             </p>
             <button className="mt-4 rounded-lg border-2 px-2.5 py-1.5">
               Experience
@@ -54,8 +54,8 @@ const Founder = () => {
               Worked with over 500+ Restaurants
             </h2>
             <p className="text-sm">
-              We streamline menu management, pricing, and product listings with
-              automation, cutting upload time and manual effort.
+              We automate menu management, pricing, and listings, reducing
+              upload time and effort.
             </p>
             <button className="mt-4 rounded-lg border-2 px-2.5 py-1.5">
               Experience
